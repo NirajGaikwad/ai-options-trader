@@ -1,104 +1,97 @@
 # ============================================================================
 # AI OPTIONS TRADING PLATFORM - PYTHON DEPENDENCIES
 # ============================================================================
+# Auto-compatible versions: pip will automatically detect and install
+# the latest compatible versions for your Python version and platform
+# ============================================================================
 
 # Core Framework
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-pydantic==2.5.3
-pydantic-settings==2.1.0
+fastapi>=0.100.0
+uvicorn[standard]>=0.20.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
 
 # Database
-sqlalchemy==2.0.23
-alembic==1.13.0
-psycopg2-binary==2.9.9  # PostgreSQL adapter
-asyncpg==0.29.0         # Async PostgreSQL
+sqlalchemy>=2.0.0
+alembic>=1.10.0
+psycopg2-binary>=2.9.0
+asyncpg>=0.28.0
 
 # Data Processing
-pandas==2.1.4
-numpy==1.26.3
-scipy==1.11.4
-
-# Technical Indicators (will be implemented custom)
-# ta-lib and pandas-ta have compatibility issues with Python 3.11
-# Using numpy/pandas for custom indicator calculations instead
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
 
 # Machine Learning
-scikit-learn==1.3.2
-xgboost==2.0.3
-lightgbm==4.1.0
-joblib==1.3.2
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+lightgbm>=4.0.0
+joblib>=1.3.0
 
 # NLP & Sentiment (optional for Phase 7+)
-nltk==3.8.1
-# transformers==4.35.2  # Heavy dependency, install when needed for Phase 7
-# torch==2.1.2  # Heavy dependency, install when needed
+nltk>=3.8.0
 
 # Time Series
-statsmodels==0.14.0
+statsmodels>=0.13.0
 
 # Cache & Task Queue
-redis==5.0.1
-celery==5.3.4
+redis>=5.0.0
+celery>=5.3.0
 
 # HTTP & WebSocket
-aiohttp==3.9.1
-websockets==12.0
+aiohttp>=3.8.0
+websockets>=11.0
 
 # Market Data APIs
-kiteconnect==5.2.1  # Zerodha KiteConnect (updated to latest stable)
-requests==2.31.0
-requests-async==0.7.0
+kiteconnect>=5.0.0
+requests>=2.28.0
 
 # Monitoring & Logging
-prometheus-client==0.19.0
-python-json-logger==2.0.7
+prometheus-client>=0.17.0
+python-json-logger>=2.0.0
 
 # Security
-python-jose==3.3.0
-passlib[bcrypt]==1.7.4
-python-dotenv==1.0.0
-cryptography==41.0.7
+python-jose>=3.3.0
+passlib[bcrypt]>=1.7.0
+python-dotenv>=1.0.0
+cryptography>=41.0.0
 
 # Utilities
-python-dateutil==2.8.2
-pytz==2023.3
-click==8.1.7
-rich==13.7.0
-tqdm==4.66.1
+python-dateutil>=2.8.0
+pytz>=2023.0
+click>=8.0.0
+rich>=13.0.0
+tqdm>=4.60.0
 
 # Testing
-pytest==7.4.3
-pytest-asyncio==0.23.1
-pytest-cov==4.1.0
-pytest-mock==3.12.0
-faker==21.0.0
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0
+faker>=18.0.0
 
 # Development
-black==23.12.1
-flake8==6.1.0
-isort==5.13.2
-mypy==1.7.1
-bandit==1.7.5  # Security linting
+black>=23.0.0
+flake8>=6.0.0
+isort>=5.12.0
+mypy>=1.0.0
+bandit>=1.7.0
 
 # ============================================================================
-# OPTIONAL DEPENDENCIES (Install as needed)
+# OPTIONAL DEPENDENCIES (uncomment as needed)
 # ============================================================================
 
 # For advanced visualization
-# plotly==5.18.0
-# dash==2.14.2
+# plotly>=5.0.0
+# dash>=2.0.0
 
 # For alternative data sources
-# yfinance==0.2.32
-# pandas-datareader==0.10.0
+# yfinance>=0.2.0
+# pandas-datareader>=0.10.0
 
 # For backtesting frameworks
-# backtrader==1.9.94.122
-# zipline-reloaded==3.0.5
-
-# For event sourcing
-# eventstore==0.0.1
+# backtrader>=1.9.0
+# zipline-reloaded>=3.0.0
 
 # For Grafana integration
-# grafana-api==1.0.3
+# grafana-api>=1.0.0
