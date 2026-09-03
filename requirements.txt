@@ -46,7 +46,7 @@ aiohttp==3.9.1
 websockets==12.0
 
 # Market Data APIs
-kiteconnect==3.10.0  # Zerodha KiteConnect
+kiteconnect==5.2.1  # Zerodha KiteConnect (updated to latest stable)
 requests==2.31.0
 requests-async==0.7.0
 
