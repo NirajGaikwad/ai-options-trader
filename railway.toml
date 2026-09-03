@@ -1,0 +1,40 @@
+# Railway Configuration for AI Options Trading Platform
+# Deploy to Railway cloud: https://railway.app
+
+[build]
+builder = "dockerfile"
+dockerfilePath = "docker/Dockerfile"
+
+[deploy]
+numReplicas = 1
+healthcheckPath = "/health"
+healthcheckTimeout = 100
+
+# Environment variables (set these in Railway dashboard)
+[[deploy.env]]
+name = "ENVIRONMENT"
+value = "production"
+
+[[deploy.env]]
+name = "PAPER_TRADING"
+value = "true"
+
+[[deploy.env]]
+name = "LIVE_TRADING_ENABLED"
+value = "false"
+
+# Database connection (Railway provides $DATABASE_URL)
+[[deploy.env]]
+name = "DATABASE_URL"
+value = "${{ Railway.DATABASE_URL }}"
+
+# Redis connection (Railway provides $REDIS_URL)
+[[deploy.env]]
+name = "REDIS_URL"
+value = "${{ Railway.REDIS_URL }}"
+
+[start]
+cmd = "uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
+
+[volumes]
+logs = "/app/logs"

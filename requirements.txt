@@ -1,0 +1,104 @@
+# ============================================================================
+# AI OPTIONS TRADING PLATFORM - PYTHON DEPENDENCIES
+# ============================================================================
+
+# Core Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# Database
+sqlalchemy==2.0.23
+alembic==1.13.0
+psycopg2-binary==2.9.9  # PostgreSQL adapter
+asyncpg==0.29.0         # Async PostgreSQL
+
+# Data Processing
+pandas==2.1.4
+numpy==1.26.3
+scipy==1.11.4
+
+# Technical Indicators
+ta-lib==0.4.28  # Or pandas-ta as alternative
+pandas-ta==0.3.14b0
+
+# Machine Learning
+scikit-learn==1.3.2
+xgboost==2.0.3
+lightgbm==4.1.0
+joblib==1.3.2
+
+# NLP & Sentiment
+nltk==3.8.1
+transformers==4.35.2
+torch==2.1.2  # PyTorch for transformers
+
+# Time Series
+statsmodels==0.14.0
+
+# Cache & Task Queue
+redis==5.0.1
+celery==5.3.4
+
+# HTTP & WebSocket
+aiohttp==3.9.1
+websockets==12.0
+
+# Market Data APIs
+kiteconnect==3.10.0  # Zerodha KiteConnect
+requests==2.31.0
+requests-async==0.7.0
+
+# Monitoring & Logging
+prometheus-client==0.19.0
+python-json-logger==2.0.7
+
+# Security
+python-jose==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.0
+cryptography==41.0.7
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+click==8.1.7
+rich==13.7.0
+tqdm==4.66.1
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.23.1
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+faker==21.0.0
+
+# Development
+black==23.12.1
+flake8==6.1.0
+isort==5.13.2
+mypy==1.7.1
+bandit==1.7.5  # Security linting
+
+# ============================================================================
+# OPTIONAL DEPENDENCIES (Install as needed)
+# ============================================================================
+
+# For advanced visualization
+# plotly==5.18.0
+# dash==2.14.2
+
+# For alternative data sources
+# yfinance==0.2.32
+# pandas-datareader==0.10.0
+
+# For backtesting frameworks
+# backtrader==1.9.94.122
+# zipline-reloaded==3.0.5
+
+# For event sourcing
+# eventstore==0.0.1
+
+# For Grafana integration
+# grafana-api==1.0.3
